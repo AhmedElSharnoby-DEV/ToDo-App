@@ -1,0 +1,51 @@
+/* Active Todo Card */
+.todo-card-complete {
+    background: #e3fcef; /* Light green background */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-left: 6px solid #28a745; /* Green border for active status */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  /* Hover Effect */
+  .todo-card-complete:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+    text-align: left; 
+  }
+  
+  /* Title */
+  .todo-card-complete .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: left;
+  }
+  
+  /* Description */
+  .todo-card-complete .card-text {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+    text-align: left; /* Left alignment */
+  }
+  
+  /* Created Date */
+  .created-date {
+    font-size: 12px;
+    color: #777;
+    margin-top: 10px;
+  }
+  
+  /* Status Badge */
+  .status-badge {
+    margin-top: 5px;
+  }
+  .status-badge .badge {
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 12px;
+    display: inline-block;
+  }
+  

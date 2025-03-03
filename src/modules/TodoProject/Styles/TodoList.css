@@ -1,0 +1,12 @@
+.todo-heading {
+    font-size: 22px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  .todo-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }

@@ -1,0 +1,32 @@
+  /* Status Badge - Left Aligned */
+  .status-badge {
+    margin-top: 5px;
+    text-align: left; /* Ensures left alignment */
+  }
+  .status-badge .badge {
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 12px;
+    display: inline-block;
+  }
+/* Actions Container */
+.todo-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  /* Buttons */
+  .todo-actions .btn {
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  .todo-actions .btn-primary:hover {
+    background: #0056b3;
+  }
+  .todo-actions .btn-danger:hover {
+    background: #c82333;
+  }

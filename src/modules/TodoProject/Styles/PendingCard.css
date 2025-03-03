@@ -1,0 +1,40 @@
+/* Todo Card Styling */
+.todo-card-pending {
+    background: #fff8e9;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-left: 6px solid #ffc107;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  /* Hover Effect */
+  .todo-card-pending:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Title - Left Aligned */
+  .todo-card-pending .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+    text-align: left; /* Ensures left alignment */
+  }
+  
+  /* Description - Left Aligned */
+  .todo-card-pending .card-text {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+    text-align: left; /* Left alignment */
+  }
+  
+  /* Created Date - Left Aligned */
+  .created-date {
+    font-size: 12px;
+    color: #777;
+    margin-top: 10px;
+    text-align: left;
+  }
