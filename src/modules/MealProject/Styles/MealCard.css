@@ -63,10 +63,11 @@
   color: white;
   border-radius: 20px;
   padding: 4px 10px;
-  font-size: 12px;
+  font-size: 14px;
   text-decoration: none;
   display: block;
   line-height: 1; /* Fixed height to stabilize */
+  height: 25px;
 }
 
 .meal-card .btn-custom:hover {

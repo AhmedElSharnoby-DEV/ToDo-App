@@ -12,6 +12,7 @@ const MealList = ({ searchValue, getTotalItems, pageNumber }) => {
         'https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood',
       );
       const data = await response.json();
+      console.log('from use effect');
       setMealItems(data.meals);
     };
     fetchTodos();
