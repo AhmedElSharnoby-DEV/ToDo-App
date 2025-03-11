@@ -1,8 +1,9 @@
 .custom-navbar {
-    background: linear-gradient(to right, #02686c2a, #9dceff70); /* Teal to Ocean Blue */
+    background: linear-gradient(90deg, #ff6e6157, hsla(51, 100%, 50%, 0.368)); 
     color: white;
     
 }
 .navbar-brand{
     cursor: pointer;
+    font-size: 25px;
 }
