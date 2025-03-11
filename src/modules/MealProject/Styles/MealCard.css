@@ -1,52 +1,74 @@
+/* MealCard.css or App.css */
 .meal-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Push content apart */
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 15px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Ensures card fits the grid cell */
-    box-sizing: border-box; /* Includes padding/border in width */
-    border-radius: 15px;
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out;
+  flex: 0 0 calc(25% - 7.5px); /* 4 items per row */
+  max-width: calc(25% - 7.5px);
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #edf6ffa5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition */
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 210px;
 }
 
-.meal-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-}
 
 .meal-card img {
-    height: 120px;
-    object-fit: cover;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+  height: 80px;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .meal-card .card-body {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1; /* Allows body to expand */
-    justify-content: space-between; /* Ensures content is spaced */
-    background: white;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    padding: 15px;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background: white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 10px;
+  text-align: center;
+}
+
+.meal-card .card-text {
+  margin-bottom: 10px;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+.meal-card .price-and-button {
+  display: flex;
+  flex-direction: column;
+  gap: 0; /* No space between h6 and a */
+  margin-top: auto; /* Push to bottom */
+}
+
+.meal-card .text-success {
+  margin-bottom: 0; /* No gap below h6 */
+  font-size: 16px;
+  line-height: 1; /* Fixed height to stabilize */
 }
 
 .meal-card .btn-custom {
-    background: #ff6f61;
-    color: white;
-    border-radius: 20px;
-    padding: 6px 15px;
-    font-size: 14px;
-    margin-top: auto; /* Pushes button to the bottom */
+  background: #ff6f61;
+  color: white;
+  border-radius: 20px;
+  padding: 4px 10px;
+  font-size: 12px;
+  text-decoration: none;
+  display: block;
+  line-height: 1; /* Fixed height to stabilize */
 }
 
 .meal-card .btn-custom:hover {
-    background: #e65a50;
+  background: #e65a50;
 }
