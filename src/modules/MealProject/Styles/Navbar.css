@@ -1,0 +1,8 @@
+.custom-navbar {
+    background: linear-gradient(to right, #02686c2a, #9dceff70); /* Teal to Ocean Blue */
+    color: white;
+    
+}
+.navbar-brand{
+    cursor: pointer;
+}
